@@ -4,4 +4,6 @@
 
 ```bash
 docker build -t torserver ./torserver
+docker-compose up -d
 ```
+默认是 socks5://127.0.0.1:19050
