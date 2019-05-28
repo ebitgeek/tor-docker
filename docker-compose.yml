@@ -2,38 +2,41 @@ version: '3'
 services:
   tor1:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9051:9050"
   tor2:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9150:9050"
   tor3:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9250:9050"
   tor4:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9350:9050"
   tor5:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9450:9050"
   tor6:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9550:9050"
   tor7:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9650:9050"
   tor8:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9750:9050"
   tor9:
     image: torserver:latest
+    ports:
+      - "127.0.0.1:9850:9050"
   tor10:
     image: torserver:latest
-  proxy:
-    image: nginx:latest
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
-      - "9050:80"
-    links:
-      - tor1
-      - tor2
-      - tor3
-      - tor4
-      - tor5
-      - tor6
-      - tor7
-      - tor8
-      - tor9
-      - tor10
+      - "127.0.0.1:9950:9050"
