@@ -2,6 +2,8 @@ version: '3'
 services:
   nginx:
     image: nginx:latest
+    volumes:
+      - ./nginx.tor.conf:/etc/nginx/conf.d/nginx.tor.conf
     ports:
       - "9050:80"
   tor1:
