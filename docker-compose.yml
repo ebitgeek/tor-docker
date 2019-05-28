@@ -1,42 +1,42 @@
 version: '3'
 services:
   tor1:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9050:9050"
   tor2:
-    build: .
+
     ports:
       - "127.0.0.1:9150:9050"
   tor3:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9250:9050"
   tor4:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9350:9050"
   tor5:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9450:9050"
   tor6:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9550:9050"
   tor7:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9650:9050"
   tor8:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9750:9050"
   tor9:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9850:9050"
   tor10:
-    build: .
+    image: torserver
     ports:
       - "127.0.0.1:9950:9050"
