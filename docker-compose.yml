@@ -5,7 +5,7 @@ services:
     ports:
       - "127.0.0.1:9050:9050"
   tor2:
-
+    image: torserver:latest
     ports:
       - "127.0.0.1:9150:9050"
   tor3:
