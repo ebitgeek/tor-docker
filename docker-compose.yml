@@ -9,7 +9,7 @@ services:
   tor1:
     image: torserver:latest
     ports:
-      - "127.0.0.1:9050:9051"
+      - "127.0.0.1:9051:9050"
   tor2:
     image: torserver:latest
     ports:
