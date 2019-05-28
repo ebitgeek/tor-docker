@@ -33,7 +33,7 @@ services:
   proxy:
     image: nginx:latest
     ports:
-      9050:9050
+      - "9050:9050"
     links:
       - tor1
       - tor2
