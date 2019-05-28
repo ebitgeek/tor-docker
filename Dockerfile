@@ -1,5 +1,5 @@
-FROM ubuntu:latest
+FROM debian:latest
 
-RUN apt update && apt upgrade -y && apt install tor -y && systemctl start tor && systemctl enable tor
+RUN sudo apt update && apt install tor -y && service tor start
 
 EXPOSE 9050
