@@ -1,5 +1,5 @@
 FROM debian:latest
 
-RUN sudo apt update && apt install tor -y && service tor start
+RUN apt update && apt install tor -y && service tor start
 
 EXPOSE 9050
