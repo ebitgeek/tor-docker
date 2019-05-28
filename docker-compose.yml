@@ -1,7 +1,7 @@
 version: '3'
 services:
   tor1:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9050:9050"
   tor2:
@@ -9,34 +9,34 @@ services:
     ports:
       - "127.0.0.1:9150:9050"
   tor3:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9250:9050"
   tor4:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9350:9050"
   tor5:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9450:9050"
   tor6:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9550:9050"
   tor7:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9650:9050"
   tor8:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9750:9050"
   tor9:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9850:9050"
   tor10:
-    image: torserver
+    image: torserver:latest
     ports:
       - "127.0.0.1:9950:9050"
