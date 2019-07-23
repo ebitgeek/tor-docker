@@ -33,17 +33,6 @@ services:
   proxy:
     image: nginx:latest
     ports:
-      - "127.0.0.1:19050:9050"
+      - "0.0.0.0:19050:9050"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-    links:
-      - tor1
-      - tor2
-      - tor3
-      - tor4
-      - tor5
-      - tor6
-      - tor7
-      - tor8
-      - tor9
-      - tor10
