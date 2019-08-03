@@ -2,36 +2,47 @@ version: '3'
 services:
   tor1:
     image: torserver:latest
+    restart: always
 
   tor2:
     image: torserver:latest
+    restart: always
 
   tor3:
     image: torserver:latest
+    restart: always
 
   tor4:
     image: torserver:latest
+    restart: always
 
   tor5:
     image: torserver:latest
+    restart: always
 
   tor6:
     image: torserver:latest
+    restart: always
 
   tor7:
     image: torserver:latest
+    restart: always
 
   tor8:
     image: torserver:latest
+    restart: always
 
   tor9:
     image: torserver:latest
+    restart: always
 
   tor10:
     image: torserver:latest
+    restart: always
 
   proxy:
     image: nginx:latest
+    restart: always
     ports:
       - "0.0.0.0:19050:9050"
     volumes:
